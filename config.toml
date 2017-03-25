@@ -1,0 +1,135 @@
+baseurl = "http://redgreen.studio/"
+title = "RedGreen Studio"
+theme = "hugo-universal-theme"
+languageCode = "en-us"
+# Enable comments by entering your Disqus shortname
+disqusShortname = "redgreen"
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = "UA-58716009-3"
+
+# Define the number of posts per page
+paginate = 10
+
+[params]
+    viewMorePostLink = "/blog/"
+    author = "Benzamin Basher"
+
+    # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
+    style = "green"
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+    #
+    # Enable the contact form by entering your Formspree.io email
+    email = "benzamin1985@gmail.com"
+
+    about_us = "<p>We Make Quality Software Products. Totally Customized, Affordable and Reliable for You.</p>"
+    copyright = "Copyright (c) 2017, RedGreen Studio; all rights reserved."
+    date_format = "2006-01-02"
+    logo = "img/logo.png"
+    address = """<p><strong>RedGreen Studio.</strong>
+        <br>H-04, R-19, S-13
+        <br>Uttara, Dhaka
+        <br>
+        <strong>Bangladesh</strong><br>
+        rgstudiobd@gmail.com
+      </p>
+      """
+    latitude = "23.870734"
+    longitude = "90.386710"
+
+[Permalinks]
+    blog = "/blog/:year/:month/:day/:filename/"
+
+[[params.menu]]
+    name = "Home"
+    url  = "/"
+    weight = 1
+
+[[params.menu]]
+    name = "Blog"
+    url  = "/blog/"
+    weight = 3
+
+[[params.menu]]
+    name = "FAQ"
+    url  = "/faq/"
+    weight = 2
+
+[[params.menu]]
+    name = "Contact"
+    url  = "/contact/"
+    weight = 4
+
+# Enable and disable widgets for the right sidebar
+[params.widgets]
+    categories = true
+    tags = true
+    search = true
+
+[params.carousel]
+    enable = true
+    # All carousel items are defined in their own files. You can find example items
+    # at 'exampleSite/data/carousel'.
+    # For more informtion take a look at the README.
+
+[params.features]
+    enable = true
+    # All features are defined in their own files. You can find example items
+    # at 'exampleSite/data/features'.
+    # For more informtion take a look at the README.
+
+# Portfolio section
+[params.portfolio]
+    enable = true
+    # All projects defined in their own files. You can find example projects
+    # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+    # at the root of this Hugo site.
+    # For more informtion take a look at the README.
+    title = "Portfolio"
+    subtitle = "Some of our works are showcased here"
+
+[params.portfolio.modal]
+  client = "Client"
+  date = "Date"
+  category = "Category"
+  buttonText = "Close project"
+
+
+[params.testimonials]
+    enable = false
+    # All testimonials are defined in their own files. You can find example items
+    # at 'exampleSite/data/testimonials'.
+    # For more informtion take a look at the README.
+    title = "Testimonials"
+    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+
+[params.see_more]
+    enable = true
+    icon = "fa fa-envelope"
+    title = "Do you want to learn more?"
+    subtitle = "If you are interested to learn more about us, want to discuss about a project or get a quotation, please contact us"
+    link_url = "/contact/"
+    link_text = "Contact Us"
+
+[params.clients]
+    enable = false
+    # All clients are defined in their own files. You can find example items
+    # at 'exampleSite/data/clients'.
+    # For more informtion take a look at the README.
+    title = "Our Clients"
+    subtitle = ""
+
+[params.recent_posts]
+    enable = true
+    title = "From our blog"
+    subtitle = "Read our blog for latest technology & development related posts, libraries & frameworks we use, reviews, news & more."

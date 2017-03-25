@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://redgreen.studio/blog/2017/03/21/bblocationmanager-simple-yet-powerfull/</loc>
+    <lastmod>2017-03-21T16:44:09+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://redgreen.studio/blog/2016/12/26/synchronus-code-ios/</loc>
+    <lastmod>2016-12-26T16:49:03+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://redgreen.studio/blog/2016/11/12/shell-mamu/</loc>
+    <lastmod>2016-11-12T21:47:08+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://redgreen.studio/tags/bash/</loc>
+    <lastmod>2016-11-12T21:47:08+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://redgreen.studio/blog/</loc>
+    <lastmod>2017-03-21T16:44:09+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://redgreen.studio/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://redgreen.studio/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redgreen.studio/faq/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redgreen.studio/tags/ios/</loc>
+    <lastmod>2017-03-21T16:44:09+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://redgreen.studio/categories/ios/</loc>
+    <lastmod>2017-03-21T16:44:09+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://redgreen.studio/tags/programming/</loc>
+    <lastmod>2017-03-21T16:44:09+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://redgreen.studio/</loc>
+    <lastmod>2017-03-21T16:44:09+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://redgreen.studio/tags/shell/</loc>
+    <lastmod>2016-11-12T21:47:08+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://redgreen.studio/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://redgreen.studio/tags/terminal/</loc>
+    <lastmod>2016-11-12T21:47:08+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://redgreen.studio/categories/tools/</loc>
+    <lastmod>2016-11-12T21:47:08+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://redgreen.studio/tags/unix/</loc>
+    <lastmod>2016-11-12T21:47:08+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://redgreen.studio/categories/utilities/</loc>
+    <lastmod>2016-11-12T21:47:08+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

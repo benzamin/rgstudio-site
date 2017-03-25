@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>BBLocationManager for iOS, simple yet powerfull</title>
+
+  <meta name="author" content="" />
+  <meta name="keywords" content="">
+
+  
+
+  <meta name="generator" content="Hugo 0.18.1" />
+
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+  
+  <link href="http://redgreen.studio/css/animate.css" rel="stylesheet">
+  <link href="http://redgreen.studio/css/agency.css" rel="stylesheet">
+
+  
+  
+    <link href="http://redgreen.studio/css/style.green.css" rel="stylesheet" id="theme-stylesheet">
+  
+
+
+  
+  <link href="http://redgreen.studio/css/custom.css" rel="stylesheet">
+
+  
+    
+
+  
+  <link rel="shortcut icon" href="http://redgreen.studio/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="http://redgreen.studio/img/apple-touch-icon.png" />
+  
+
+  <link href="http://redgreen.studio/css/owl.carousel.css" rel="stylesheet">
+  <link href="http://redgreen.studio/css/owl.theme.css" rel="stylesheet">
+
+  <link rel="alternate" href="http://redgreen.studio/index.xml" type="application/rss+xml" title="RedGreen Studio">
+
+  
+  <meta property="og:title" content="BBLocationManager for iOS, simple yet powerfull" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/blog/2017/03/21/bblocationmanager-simple-yet-powerfull//" />
+  <meta property="og:image" content="img/logo.png" />
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css"> 
+
+
+</head>
+
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          <div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="http://redgreen.studio/">
+                    <img src="http://redgreen.studio/img/logo.png" alt="BBLocationManager for iOS, simple yet powerfull logo" class="hidden-xs hidden-sm">
+                    <img src="http://redgreen.studio/img/logo-small.png" alt="BBLocationManager for iOS, simple yet powerfull logo" class="visible-xs visible-sm">
+                    <span class="sr-only">BBLocationManager for iOS, simple yet powerfull - go to homepage</span>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-align-justify"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="navbar-collapse collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li class="dropdown">
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="/blog/">Blog</a>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="/faq/">FAQ</a>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="/contact/">Contact</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+
+            <div class="collapse clearfix" id="search">
+
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+
+                </span>
+                    </div>
+                </form>
+
+            </div>
+            
+
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+
+        </header>
+
+        <div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>BBLocationManager for iOS, simple yet powerfull</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div id="content">
+            <div class="container">
+
+                <div class="row">
+
+                    
+
+                    <div class="col-md-9" id="blog-post">
+
+                        <p class="text-muted text-uppercase mb-small text-right">March 21, 2017</p>
+
+                        <div id="post-content">
+                          
+
+<p><a href="https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/LocationAwarenessPG/CoreLocation/CoreLocation.html">Location services</a> is a powerful feature of iOS, but sometimes its not easy to understand all the API&rsquo;s and learn how to use them. With BBLocationManager, you can start using iOS Location Services API in no time. It provides good code documentation for better understanding of the methods and delegates. If you are making a location aware app or building a geofencing app like the <a href="https://developer.apple.com/library/content/documentation/DataManagement/Conceptual/EventKitProgGuide/ConfiguringAlarms/ConfiguringAlarms.html">Alarm</a> app in iOS which reminds you to buy milk when you are near home, BBLocationManager can be your choice.<br><br></p>
+
+<p><a href="http://github.com/benzamin/BBLocationManager" rel="Github Link"><img src="https://raw.githubusercontent.com/benzamin/BBLocationManager/master/screens/BBLocationManager-logo.png" alt="BBLocationManager logo" /></a>
+<br><br>
+<iframe src="https://ghbtns.com/github-btn.html?user=benzamin&repo=BBLocationManager&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+<iframe src="https://ghbtns.com/github-btn.html?user=benzamin&repo=BBLocationManager&type=watch&count=true&size=large&v=2" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+<iframe src="https://ghbtns.com/github-btn.html?user=benzamin&repo=BBLocationManager&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>
+<iframe src="https://ghbtns.com/github-btn.html?user=benzamin&type=follow&count=true&size=large" frameborder="0" scrolling="0" width="220px" height="30px"></iframe>
+<br><br></p>
+
+<p>Introducing <a href="http://github.com/benzamin/BBLocationManager">BBLocationManager</a>, A Location Manager for easily implementing location services &amp; geofencing in iOS, written in Objective-C. Here are the features:</p>
+
+<ul>
+<li>Get current/continious/frequent location and get current geocode/address with simple API call.</li>
+<li>Add or remove <a href="https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/LocationAwarenessPG/RegionMonitoring/RegionMonitoring.html">Geofence</a> at current/given location. Get callback via delegate when user enter/exit a geofence, supports foreground/background, even when <a href="https://developer.apple.com/reference/corelocation/cllocationmanager#//apple_ref/doc/uid/TP40007125-CH3-SW32">app is not running</a>.</li>
+<li>Read location permission status and if not provided ask for location permisssion automatically.</li>
+<li>High performance, easy to use, battery friendly, use via block or delegate. Stops automatically when location update is not required.</li>
+<li><a href="https://github.com/benzamin/BBLocationManager/archive/master.zip">Example App</a> included for demonstrating all the features. Supports iOS 6.0 and later.
+<br>
+<br><br>
+<img src="https://raw.githubusercontent.com/benzamin/BBLocationManager/master/screens/locationNgeofence.gif" alt="Current location and GeoCode" title="Getting current location and Geocode" />
+<img src="https://raw.githubusercontent.com/benzamin/BBLocationManager/master/screens/geofence.gif" alt="Geofence and alert" title="Adding Geofence and getting alert" /></li>
+</ul>
+
+<p><br><br><br></p>
+
+<h3 id="installing-with-cocoapods">Installing with CocoaPods</h3>
+
+<p><a href="http://cocoapods.org">CocoaPods</a> is very popular dependency manager for iOS projects. It automates and simplifies the process of using 3rd-party libraries like BBLocation in your projects. If you don&rsquo;t have cocoapods installed in your mac already, you can install it with the following command:</p>
+
+<pre><code class="language-bash">$ gem install cocoapods
+</code></pre>
+
+<h4 id="podfile">Podfile</h4>
+
+<p>If you already have a Podfile, add the following line in your podfile:</p>
+
+<pre><code class="language-ruby">pod 'BBLocationManager'
+</code></pre>
+
+<p>If you already dont have a podfile, To integrate BBLocationManager into your Xcode project using CocoaPods, create and add it in your <code>Podfile</code>:</p>
+
+<pre><code class="language-ruby">source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '7.0'
+
+target 'YourTargetName' do
+pod 'BBLocationManager'
+end
+</code></pre>
+
+<p>Then, run the following command:</p>
+
+<pre><code class="language-bash">$ pod install
+</code></pre>
+
+<p>And the pod should be installed in your project. <strong>PLEASE NOTE:</strong> Close the yourProject.xcodeProj and open the yourProject.xcworkspace, as the pod has been initiated, from now one use the yourProject.xcworkspace to work with. Please refer to <a href="http://cocoapods.org">CocoaPods</a> for detailed info.</p>
+
+<h4 id="manual-installation">Manual Installation</h4>
+
+<p>Just add the BBLocationManager.h and BBLocationManager.m files in your project <a href="https://github.com/benzamin/BBLocationManager/tree/master/BBLocationManager/BBLocationManagerClasses">From Here</a>. Import the BBLocationManager.h file in your class where you need location support.</p>
+
+<h2 id="permission">Permission</h2>
+
+<p>BBLocationManager automatically reads the current location permission status of the app and requests for permission if needed. But you need to provide some information in your info.plist file of your project depending on the minimum iOS version you are trageting. For iOS Version earlier then 8.0, a description of your purpose is recommended to provide by setting a string for the key <code>NSLocationUsageDescription</code> in your app&rsquo;s Info.plist file.</p>
+
+<h4 id="for-ios-8-and-later">For iOS 8 and later</h4>
+
+<p>Starting with <strong>iOS 8, you MUST</strong> provide a description for how your app uses location services by setting a string for the key <code>NSLocationWhenInUseUsageDescription</code> or <code>NSLocationAlwaysUsageDescription</code> in your app&rsquo;s Info.plist file. BBLocationManager automatically reads which level of permissions to request based on which description key you provide. You should only request the minimum permission level that your app requires, therefore it is recommended that you use the &ldquo;When In Use&rdquo; level unless you require more access. If you provide values for both description keys, the more permissive &ldquo;Always&rdquo; level is requested.
+Also, if you want to get <strong>loation update in background</strong> (even when app not running), you <strong>MUST</strong> provide a key called <code>UIBackgroundModes</code> and add a item called <code>location</code> inside it. Please see the attached image for these keys:</p>
+
+<p><img src="https://raw.githubusercontent.com/benzamin/BBLocationManager/master/screens/keys.png" alt="Setting the keys in info.plist" title="Configure these keys correctly, otherwise the location update might not work correctly." /></p>
+
+<h2 id="usage">Usage</h2>
+
+<p>First import <code>BBLocationManager.h</code> header in your class. Calling <code>[BBLocationManager sharedManager]</code> creates an singleton class of <code>BBLocationManager</code> and manages everything from here. You can either use <code>BBLocationManagerDelegate</code> to get location/geofence related callbacks, or use Objective-C blocks to get location. For useing Geofence, the <code>BBFenceInfo</code> is a easy to use object, using which <code>BBLocationManager</code> delivers fence related data to your class. You can use <code>lastKnownGeocodeAddress</code> and <code>lastKnownGeoLocation</code> properties to get the last location/geocode the class got before.</p>
+
+<ul>
+<li>To know the current location permission status call <code>+ (BOOL)locationPermission</code> method.</li>
+<li>To manually ask the user for location permission before accessing location, call <code>-(void)getPermissionForStartUpdatingLocation</code> method.</li>
+</ul>
+
+<h4 id="getting-current-location-using-block">Getting current location (Using Block)</h4>
+
+<p>Get BBLocationManager&rsquo;s shared instance, set the <code>desiredAcuracy</code> and <code>distanceFilter</code> parameter as you like, then request for current location using block or delegate.</p>
+
+<pre><code class="language-objectivec">BBLocationManager *manager = [BBLocationManager sharedManager];
+manager.desiredAcuracy = 100; //how accurate you want your location, in meters   
+manager.distanceFilter = 500; //you'll be notified if user moves away 500 meters from his initial location
+[manager getCurrentLocationWithCompletion:^(BOOL success, NSDictionary *latLongAltitudeDictionary, NSError *error) {
+        //access the 'latLongAltitudeDictionary' dictionary using BB_LATITUDE, BB_LONGITUDE, BB_ALTITUDE key
+        NSLog(@&quot;Current Location latitude: %@&quot;, latLongAltitudeDictionary[BB_LATITUDE]);
+}];
+</code></pre>
+
+<h4 id="getting-current-location-using-delegate">Getting current location (Using Delegate)</h4>
+
+<pre><code class="language-objectivec">BBLocationManager *manager = [BBLocationManager sharedManager];
+manager.desiredAcuracy = 100; //how accurate you want your location, in meters   
+manager.distanceFilter = 500; //you'll be notified if user moves away 500 meters from his initial location
+[manager getCurrentLocationWithDelegate:self];  
+......
+......
+#pragma mark - BBLocationManagerDelegate methods
+-(void)BBLocationManagerDidUpdateLocation:(NSDictionary *)latLongAltitudeDictionary
+{
+    //access the 'latLongAltitudeDictionary' dictionary using BB_LATITUDE, BB_LONGITUDE, BB_ALTITUDE key
+    NSLog(@&quot;Current Location Latitude: %@&quot;, latLongAltitudeDictionary[BB_LATITUDE]);
+}
+</code></pre>
+
+<h4 id="getting-current-geocode-address-using-block">Getting current geocode/address (Using Block)</h4>
+
+<p>You can get user&rsquo;s current geocode AKA address from apple&rsquo;s geocode/maps server. You might need it for different purpose, and it might take a little time to get the location first and then determine the address.</p>
+
+<pre><code class="language-objective-c">BBLocationManager *manager = [BBLocationManager sharedManager];
+    [manager getCurrentGeoCodeAddressWithCompletion:^(BOOL success, NSDictionary *addressDictionary, NSError *error) {
+        //access the dict using BB_LATITUDE, BB_LONGITUDE, BB_ALTITUDE, BB_ADDRESS_NAME, BB_ADDRESS_STREET, BB_ADDRESS_CITY, BB_ADDRESS_STATE, BB_ADDRESS_COUNTY, BB_ADDRESS_ZIPCODE, BB_ADDRESS_COUNTY, BB_ADDRESS_DICTIONARY
+        NSLog(NSString stringWithFormat:@&quot;Current GeoCode/Address: %@&quot;, addressDictionary.description);
+    }];
+</code></pre>
+
+<h4 id="add-a-geofence-in-current-location">Add a geofence in current location</h4>
+
+<pre><code class="language-objectivec">BBLocationManager *manager = [BBLocationManager sharedManager];
+manager.delegate = self;
+[manager addGeofenceAtCurrentLocation];
+/*****can be also done using one of the following methods *****/
+//[manager addGeofenceAtCurrentLocationWithRadious:100];
+//[manager addGeofenceAtlatitude:59.331981f andLongitude:18.068435f withRadious:100 withIdentifier:@&quot;MyFence-1&quot;;
+//[manager addGeofenceAtCurrentLocationWithRadious:100 withIdentifier:@&quot;MyFence-1&quot;];
+//[manager addGeofenceAtCoordinates:CLLocationCoordinate2DMake(59.331981f, 18.068435f) withRadious:100 withIdentifier:@&quot;MyFence-1&quot;];
+//[manager addGeofenceAtCoordinates:CLLocationCoordinate2DMake(59.331981f, 18.068435f) withRadious:100 withIdentifier:nil];//If you provide identifier name 'nil', BBLocationManager will automatically asign a identifier string
+</code></pre>
+
+<h4 id="get-all-added-geofences">Get all added geofences</h4>
+
+<p>See which geofence is already added to get enter/exit callbacks. <strong>NOTE:</strong> You can add [maximum 20 geofences, its a limit <a href="https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/LocationAwarenessPG/RegionMonitoring/RegionMonitoring.html">apple put</a> in region monitoring.</p>
+
+<pre><code class="language-objective-c"> BBLocationManager *manager = [BBLocationManager sharedManager];
+    
+    NSArray *geoFences = [manager getCurrentFences];
+    NSString *allFencetxt = @&quot;All fences: &quot;;
+    for (BBFenceInfo *geofence in geoFences)
+    {
+        NSString *txt = [NSString stringWithFormat:@&quot;Geofence '%@' is Active at Coordinates: %@:%@ with %@ meter radious \n&quot;, geofence.fenceIDentifier, [geofence.fenceCoordinate objectForKey:BB_LATITUDE],[geofence.fenceCoordinate objectForKey:BB_LONGITUDE], [geofence.fenceCoordinate objectForKey:BB_RADIOUS]];
+        NSLog(@&quot;%@&quot;, txt);
+    }
+</code></pre>
+
+<h4 id="delete-a-spefific-geofence">Delete a spefific geofence</h4>
+
+<pre><code class="language-objectivec"> BBLocationManager *manager = [BBLocationManager sharedManager];
+[manager deleteGeoFenceWithIdentifier:@&quot;My-Geofence-3&quot;];
+</code></pre>
+
+<h4 id="subscribe-to-continious-location">Subscribe to Continious location</h4>
+
+<p>To get continuous location updates, use <code>-getContiniousLocationWithDelegate:</code> method. This will enable the BBLocationManager to listen every bit of change in location, and will keep you updated using the <code>-BBLocationManagerDidUpdateLocation:</code> delegate call. To stop getting continious location, call <code>-stopGettingLocation</code> method. Note that, until you stop the continious location, it will keep updating and will use battery life.</p>
+
+<pre><code class="language-objectivec">BBLocationManager *manager = [BBLocationManager sharedManager];
+[manager getContiniousLocationWithDelegate:self];
+</code></pre>
+
+<h4 id="subscribe-to-significant-location-change">Subscribe to Significant location change</h4>
+
+<p>To get significant location changes, use <code>-getSingificantLocationChangeWithDelegate:</code> method. This will start looking for for significant location changes, which is very power efficient. The delegate callback <code>-BBLocationManagerDidUpdateLocation:</code> will be called everytime BBLocationManager finds any significant location change. This can be stoped by calling the <code>-stopGettingLocation</code> method.</p>
+
+<pre><code class="language-objectivec">BBLocationManager *manager = [BBLocationManager sharedManager];
+[manager getSingificantLocationChangeWithDelegate:self];
+</code></pre>
+
+<p><strong>NOTE:</strong> Significant location change will not be called frequently. According to <a href="https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/LocationAwarenessPG/CoreLocation/CoreLocation.html">Apple documentation:</a>
+&gt;&ldquo;Apps can expect a notification as soon as the device moves 500 meters or more from its previous notification. It should not expect notifications more frequently than once every five minutes. If the device is able to retrieve data from the network, the location manager is much more likely to deliver notifications in a timely manner.&rdquo;</p>
+
+<h4 id="stop-getting-all-kind-of-location">Stop getting all kind of location</h4>
+
+<pre><code class="language-objectivec">BBLocationManager *manager = [BBLocationManager sharedManager];
+[manager stopGettingLocation];
+</code></pre>
+
+<h4 id="bblocationmanagerdelegate-methods">BBLocationManagerDelegate methods</h4>
+
+<pre><code class="language-objectivec">-(void)BBLocationManagerDidUpdateLocation:(NSDictionary *)latLongAltitudeDictionary;
+
+-(void)BBLocationManagerDidUpdateGeocodeAdress:(NSDictionary *)addressDictionary;
+
+-(void)BBLocationManagerDidAddFence:(BBFenceInfo *)fenceInfo;
+-(void)BBLocationManagerDidFailedFence:(BBFenceInfo *)fenceInf
+-(void)BBLocationManagerDidEnterFence:(BBFenceInfo *)fenceInfo
+-(void)BBLocationManagerDidExitFence:(BBFenceInfo *)fenceInfo;
+
+</code></pre>
+
+<h2 id="example-project">Example Project</h2>
+
+<p><a href="https://github.com/benzamin/BBLocationManager/archive/master.zip">Downloading the full source code</a> or checking out using git will provide you the example project. Give it a try, dont forget to specify a location in the iOS Simulator&rsquo;s Debug &gt; Location menu if you aren&rsquo;t testing on real device.</p>
+
+<h2 id="give-a-star">Give a star</h2>
+
+<p>if you like <a href="http://github.com/benzamin/BBLocationManager">BBLocationManager repo</a>, please dont forget to give a STAR.
+ <br><br>
+<iframe src="https://ghbtns.com/github-btn.html?user=benzamin&repo=BBLocationManager&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+<iframe src="https://ghbtns.com/github-btn.html?user=benzamin&repo=BBLocationManager&type=watch&count=true&size=large&v=2" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+<iframe src="https://ghbtns.com/github-btn.html?user=benzamin&repo=BBLocationManager&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>
+<iframe src="https://ghbtns.com/github-btn.html?user=benzamin&type=follow&count=true&size=large" frameborder="0" scrolling="0" width="220px" height="30px"></iframe>
+<br></p>
+
+<h3 id="using-bblocationmanager-in-your-project">Using BBLocationManager in your project?</h3>
+
+<p>If you are using this library in your project, and happy about it, please send me a <a href="mailto:benzamin1985@gmail.com">email</a> and let me know, I&rsquo;ll add a references of your app. Thanks :)</p>
+
+                        </div>
+                        
+                        
+                        <div id="comments">
+                            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'redgreen';
+    var disqus_identifier = 'http:\/\/redgreen.studio\/blog\/2017\/03\/21\/bblocationmanager-simple-yet-powerfull\/';
+    var disqus_title = 'BBLocationManager for iOS, simple yet powerfull';
+    var disqus_url = 'http:\/\/redgreen.studio\/blog\/2017\/03\/21\/bblocationmanager-simple-yet-powerfull\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                        </div>
+                        
+
+                    </div>
+                    
+
+                    
+
+                    
+
+                    <div class="col-md-3">
+
+                        
+
+                        
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">Search</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" results="0" class="form-control" placeholder="Search">
+                <input type="hidden" name="q" value="site:http://redgreen.studio/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">Categories</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="nav nav-pills nav-stacked">
+            
+            <li><a href="http://redgreen.studio/categories/ios">ios (2)</a>
+            </li>
+            
+            <li><a href="http://redgreen.studio/categories/tools">tools (1)</a>
+            </li>
+            
+            <li><a href="http://redgreen.studio/categories/utilities">utilities (1)</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+    <div class="panel-heading">
+        <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            <li><a href="http://redgreen.studio/tags/bash"><i class="fa fa-tags"></i> bash</a>
+            </li>
+            
+            <li><a href="http://redgreen.studio/tags/ios"><i class="fa fa-tags"></i> ios</a>
+            </li>
+            
+            <li><a href="http://redgreen.studio/tags/programming"><i class="fa fa-tags"></i> programming</a>
+            </li>
+            
+            <li><a href="http://redgreen.studio/tags/shell"><i class="fa fa-tags"></i> shell</a>
+            </li>
+            
+            <li><a href="http://redgreen.studio/tags/terminal"><i class="fa fa-tags"></i> terminal</a>
+            </li>
+            
+            <li><a href="http://redgreen.studio/tags/unix"><i class="fa fa-tags"></i> unix</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+                        
+
+                    </div>
+                    
+
+                    
+
+                </div>
+                
+
+            </div>
+            
+        </div>
+        
+
+        <footer id="footer">
+    <div class="container">
+
+        
+        <div class="col-md-4 col-sm-6">
+            <h4>About us</h4>
+
+            <p>We Make Quality Software Products. Totally Customized, Affordable and Reliable for You.</p>
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+        <div class="col-md-4 col-sm-6">
+
+            <h4>Recent posts</h4>
+
+            <div class="blog-entries">
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="http://redgreen.studio/blog/2017/03/21/bblocationmanager-simple-yet-powerfull/">
+                          
+                            <img src="http://redgreen.studio/img/blog/bblocationManager-simple-powerfull.jpg" class="img-responsive" alt="">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="http://redgreen.studio/blog/2017/03/21/bblocationmanager-simple-yet-powerfull/">BBLocationManager for iOS, simple yet powerfull</a></h5>
+                    </div>
+                </div>
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="http://redgreen.studio/blog/2016/12/26/synchronus-code-ios/">
+                          
+                            <img src="http://redgreen.studio/img/blog/synchronous-code-ios.jpg" class="img-responsive" alt="">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="http://redgreen.studio/blog/2016/12/26/synchronus-code-ios/">Synchronus Code Execution in iOS</a></h5>
+                    </div>
+                </div>
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="http://redgreen.studio/blog/2016/11/12/shell-mamu/">
+                          
+                            <img src="http://redgreen.studio/img/blog/shell-mamu.jpg" class="img-responsive" alt="">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="http://redgreen.studio/blog/2016/11/12/shell-mamu/">ShellMamu, Shell Utility Tool</a></h5>
+                    </div>
+                </div>
+                
+            </div>
+
+            <hr class="hidden-md hidden-lg">
+
+        </div>
+        
+
+        
+        <div class="col-md-4 col-sm-6">
+
+            <h4>Contact</h4>
+
+            <p><strong>RedGreen Studio.</strong>
+        <br>H-04, R-19, S-13
+        <br>Uttara, Dhaka
+        <br>
+        <strong>Bangladesh</strong><br>
+        rgstudiobd@gmail.com
+      </p>
+      
+
+            <a href="/contact" class="btn btn-small btn-template-main">Go to contact page</a>
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+    </div>
+    
+</footer>
+
+
+
+
+
+
+
+<div id="copyright">
+    <div class="container">
+        <div class="col-md-12">
+            
+            <p class="pull-left">Copyright (c) 2017, RedGreen Studio; all rights reserved.</p>
+            
+            <p class="pull-right">
+              Template by <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
+              
+
+              Ported by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    </div>
+    
+
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-58716009-3', 'auto');
+ga('send', 'pageview');
+</script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCmCloE6_gVqLXHxrH59sdpRBb5Hi8VRow&v=3"></script>
+<script src="http://redgreen.studio/js/hpneo.gmaps.js"></script>
+<script src="http://redgreen.studio/js/gmaps.init.js"></script>
+<script src="http://redgreen.studio/js/front.js"></script>
+
+
+<script src="http://redgreen.studio/js/owl.carousel.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>  <script>hljs.initHighlightingOnLoad();</script>
+ 
+
+
+
+  </body>
+</html>

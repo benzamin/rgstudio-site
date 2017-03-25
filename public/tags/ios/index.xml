@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ios on RedGreen Studio</title>
+    <link>http://redgreen.studio/tags/ios/index.xml</link>
+    <description>Recent content in Ios on RedGreen Studio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 2017, RedGreen Studio; all rights reserved.</copyright>
+    <atom:link href="http://redgreen.studio/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>BBLocationManager for iOS, simple yet powerfull</title>
+      <link>http://redgreen.studio/blog/2017/03/21/bblocationmanager-simple-yet-powerfull/</link>
+      <pubDate>Tue, 21 Mar 2017 16:44:09 +0600</pubDate>
+      
+      <guid>http://redgreen.studio/blog/2017/03/21/bblocationmanager-simple-yet-powerfull/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/LocationAwarenessPG/CoreLocation/CoreLocation.html&#34;&gt;Location services&lt;/a&gt; is a powerful feature of iOS, but sometimes its not easy to understand all the API&amp;rsquo;s and learn how to use them. With BBLocationManager, you can start using iOS Location Services API in no time. It provides good code documentation for better understanding of the methods and delegates. If you are making a location aware app or building a geofencing app like the &lt;a href=&#34;https://developer.apple.com/library/content/documentation/DataManagement/Conceptual/EventKitProgGuide/ConfiguringAlarms/ConfiguringAlarms.html&#34;&gt;Alarm&lt;/a&gt; app in iOS which reminds you to buy milk when you are near home, BBLocationManager can be your choice.&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://github.com/benzamin/BBLocationManager&#34; rel=&#34;Github Link&#34;&gt;&lt;img src=&#34;https://raw.githubusercontent.com/benzamin/BBLocationManager/master/screens/BBLocationManager-logo.png&#34; alt=&#34;BBLocationManager logo&#34; /&gt;&lt;/a&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;iframe src=&#34;https://ghbtns.com/github-btn.html?user=benzamin&amp;repo=BBLocationManager&amp;type=star&amp;count=true&amp;size=large&#34; frameborder=&#34;0&#34; scrolling=&#34;0&#34; width=&#34;160px&#34; height=&#34;30px&#34;&gt;&lt;/iframe&gt;
+&lt;iframe src=&#34;https://ghbtns.com/github-btn.html?user=benzamin&amp;repo=BBLocationManager&amp;type=watch&amp;count=true&amp;size=large&amp;v=2&#34; frameborder=&#34;0&#34; scrolling=&#34;0&#34; width=&#34;160px&#34; height=&#34;30px&#34;&gt;&lt;/iframe&gt;
+&lt;iframe src=&#34;https://ghbtns.com/github-btn.html?user=benzamin&amp;repo=BBLocationManager&amp;type=fork&amp;count=true&amp;size=large&#34; frameborder=&#34;0&#34; scrolling=&#34;0&#34; width=&#34;158px&#34; height=&#34;30px&#34;&gt;&lt;/iframe&gt;
+&lt;iframe src=&#34;https://ghbtns.com/github-btn.html?user=benzamin&amp;type=follow&amp;count=true&amp;size=large&#34; frameborder=&#34;0&#34; scrolling=&#34;0&#34; width=&#34;220px&#34; height=&#34;30px&#34;&gt;&lt;/iframe&gt;
+&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;Introducing &lt;a href=&#34;http://github.com/benzamin/BBLocationManager&#34;&gt;BBLocationManager&lt;/a&gt;, A Location Manager for easily implementing location services &amp;amp; geofencing in iOS, written in Objective-C. Here are the features:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Get current/continious/frequent location and get current geocode/address with simple API call.&lt;/li&gt;
+&lt;li&gt;Add or remove &lt;a href=&#34;https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/LocationAwarenessPG/RegionMonitoring/RegionMonitoring.html&#34;&gt;Geofence&lt;/a&gt; at current/given location. Get callback via delegate when user enter/exit a geofence, supports foreground/background, even when &lt;a href=&#34;https://developer.apple.com/reference/corelocation/cllocationmanager#//apple_ref/doc/uid/TP40007125-CH3-SW32&#34;&gt;app is not running&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Read location permission status and if not provided ask for location permisssion automatically.&lt;/li&gt;
+&lt;li&gt;High performance, easy to use, battery friendly, use via block or delegate. Stops automatically when location update is not required.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/benzamin/BBLocationManager/archive/master.zip&#34;&gt;Example App&lt;/a&gt; included for demonstrating all the features. Supports iOS 6.0 and later.
+&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/benzamin/BBLocationManager/master/screens/locationNgeofence.gif&#34; alt=&#34;Current location and GeoCode&#34; title=&#34;Getting current location and Geocode&#34; /&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/benzamin/BBLocationManager/master/screens/geofence.gif&#34; alt=&#34;Geofence and alert&#34; title=&#34;Adding Geofence and getting alert&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;installing-with-cocoapods&#34;&gt;Installing with CocoaPods&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://cocoapods.org&#34;&gt;CocoaPods&lt;/a&gt; is very popular dependency manager for iOS projects. It automates and simplifies the process of using 3rd-party libraries like BBLocation in your projects. If you don&amp;rsquo;t have cocoapods installed in your mac already, you can install it with the following command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ gem install cocoapods
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;podfile&#34;&gt;Podfile&lt;/h4&gt;
+
+&lt;p&gt;If you already have a Podfile, add the following line in your podfile:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;pod &#39;BBLocationManager&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you already dont have a podfile, To integrate BBLocationManager into your Xcode project using CocoaPods, create and add it in your &lt;code&gt;Podfile&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;source &#39;https://github.com/CocoaPods/Specs.git&#39;
+platform :ios, &#39;7.0&#39;
+
+target &#39;YourTargetName&#39; do
+pod &#39;BBLocationManager&#39;
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then, run the following command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ pod install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And the pod should be installed in your project. &lt;strong&gt;PLEASE NOTE:&lt;/strong&gt; Close the yourProject.xcodeProj and open the yourProject.xcworkspace, as the pod has been initiated, from now one use the yourProject.xcworkspace to work with. Please refer to &lt;a href=&#34;http://cocoapods.org&#34;&gt;CocoaPods&lt;/a&gt; for detailed info.&lt;/p&gt;
+
+&lt;h4 id=&#34;manual-installation&#34;&gt;Manual Installation&lt;/h4&gt;
+
+&lt;p&gt;Just add the BBLocationManager.h and BBLocationManager.m files in your project &lt;a href=&#34;https://github.com/benzamin/BBLocationManager/tree/master/BBLocationManager/BBLocationManagerClasses&#34;&gt;From Here&lt;/a&gt;. Import the BBLocationManager.h file in your class where you need location support.&lt;/p&gt;
+
+&lt;h2 id=&#34;permission&#34;&gt;Permission&lt;/h2&gt;
+
+&lt;p&gt;BBLocationManager automatically reads the current location permission status of the app and requests for permission if needed. But you need to provide some information in your info.plist file of your project depending on the minimum iOS version you are trageting. For iOS Version earlier then 8.0, a description of your purpose is recommended to provide by setting a string for the key &lt;code&gt;NSLocationUsageDescription&lt;/code&gt; in your app&amp;rsquo;s Info.plist file.&lt;/p&gt;
+
+&lt;h4 id=&#34;for-ios-8-and-later&#34;&gt;For iOS 8 and later&lt;/h4&gt;
+
+&lt;p&gt;Starting with &lt;strong&gt;iOS 8, you MUST&lt;/strong&gt; provide a description for how your app uses location services by setting a string for the key &lt;code&gt;NSLocationWhenInUseUsageDescription&lt;/code&gt; or &lt;code&gt;NSLocationAlwaysUsageDescription&lt;/code&gt; in your app&amp;rsquo;s Info.plist file. BBLocationManager automatically reads which level of permissions to request based on which description key you provide. You should only request the minimum permission level that your app requires, therefore it is recommended that you use the &amp;ldquo;When In Use&amp;rdquo; level unless you require more access. If you provide values for both description keys, the more permissive &amp;ldquo;Always&amp;rdquo; level is requested.
+Also, if you want to get &lt;strong&gt;loation update in background&lt;/strong&gt; (even when app not running), you &lt;strong&gt;MUST&lt;/strong&gt; provide a key called &lt;code&gt;UIBackgroundModes&lt;/code&gt; and add a item called &lt;code&gt;location&lt;/code&gt; inside it. Please see the attached image for these keys:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/benzamin/BBLocationManager/master/screens/keys.png&#34; alt=&#34;Setting the keys in info.plist&#34; title=&#34;Configure these keys correctly, otherwise the location update might not work correctly.&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
+
+&lt;p&gt;First import &lt;code&gt;BBLocationManager.h&lt;/code&gt; header in your class. Calling &lt;code&gt;[BBLocationManager sharedManager]&lt;/code&gt; creates an singleton class of &lt;code&gt;BBLocationManager&lt;/code&gt; and manages everything from here. You can either use &lt;code&gt;BBLocationManagerDelegate&lt;/code&gt; to get location/geofence related callbacks, or use Objective-C blocks to get location. For useing Geofence, the &lt;code&gt;BBFenceInfo&lt;/code&gt; is a easy to use object, using which &lt;code&gt;BBLocationManager&lt;/code&gt; delivers fence related data to your class. You can use &lt;code&gt;lastKnownGeocodeAddress&lt;/code&gt; and &lt;code&gt;lastKnownGeoLocation&lt;/code&gt; properties to get the last location/geocode the class got before.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;To know the current location permission status call &lt;code&gt;+ (BOOL)locationPermission&lt;/code&gt; method.&lt;/li&gt;
+&lt;li&gt;To manually ask the user for location permission before accessing location, call &lt;code&gt;-(void)getPermissionForStartUpdatingLocation&lt;/code&gt; method.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;getting-current-location-using-block&#34;&gt;Getting current location (Using Block)&lt;/h4&gt;
+
+&lt;p&gt;Get BBLocationManager&amp;rsquo;s shared instance, set the &lt;code&gt;desiredAcuracy&lt;/code&gt; and &lt;code&gt;distanceFilter&lt;/code&gt; parameter as you like, then request for current location using block or delegate.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-objectivec&#34;&gt;BBLocationManager *manager = [BBLocationManager sharedManager];
+manager.desiredAcuracy = 100; //how accurate you want your location, in meters   
+manager.distanceFilter = 500; //you&#39;ll be notified if user moves away 500 meters from his initial location
+[manager getCurrentLocationWithCompletion:^(BOOL success, NSDictionary *latLongAltitudeDictionary, NSError *error) {
+        //access the &#39;latLongAltitudeDictionary&#39; dictionary using BB_LATITUDE, BB_LONGITUDE, BB_ALTITUDE key
+        NSLog(@&amp;quot;Current Location latitude: %@&amp;quot;, latLongAltitudeDictionary[BB_LATITUDE]);
+}];
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;getting-current-location-using-delegate&#34;&gt;Getting current location (Using Delegate)&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-objectivec&#34;&gt;BBLocationManager *manager = [BBLocationManager sharedManager];
+manager.desiredAcuracy = 100; //how accurate you want your location, in meters   
+manager.distanceFilter = 500; //you&#39;ll be notified if user moves away 500 meters from his initial location
+[manager getCurrentLocationWithDelegate:self];  
+......
+......
+#pragma mark - BBLocationManagerDelegate methods
+-(void)BBLocationManagerDidUpdateLocation:(NSDictionary *)latLongAltitudeDictionary
+{
+    //access the &#39;latLongAltitudeDictionary&#39; dictionary using BB_LATITUDE, BB_LONGITUDE, BB_ALTITUDE key
+    NSLog(@&amp;quot;Current Location Latitude: %@&amp;quot;, latLongAltitudeDictionary[BB_LATITUDE]);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;getting-current-geocode-address-using-block&#34;&gt;Getting current geocode/address (Using Block)&lt;/h4&gt;
+
+&lt;p&gt;You can get user&amp;rsquo;s current geocode AKA address from apple&amp;rsquo;s geocode/maps server. You might need it for different purpose, and it might take a little time to get the location first and then determine the address.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-objective-c&#34;&gt;BBLocationManager *manager = [BBLocationManager sharedManager];
+    [manager getCurrentGeoCodeAddressWithCompletion:^(BOOL success, NSDictionary *addressDictionary, NSError *error) {
+        //access the dict using BB_LATITUDE, BB_LONGITUDE, BB_ALTITUDE, BB_ADDRESS_NAME, BB_ADDRESS_STREET, BB_ADDRESS_CITY, BB_ADDRESS_STATE, BB_ADDRESS_COUNTY, BB_ADDRESS_ZIPCODE, BB_ADDRESS_COUNTY, BB_ADDRESS_DICTIONARY
+        NSLog(NSString stringWithFormat:@&amp;quot;Current GeoCode/Address: %@&amp;quot;, addressDictionary.description);
+    }];
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;add-a-geofence-in-current-location&#34;&gt;Add a geofence in current location&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-objectivec&#34;&gt;BBLocationManager *manager = [BBLocationManager sharedManager];
+manager.delegate = self;
+[manager addGeofenceAtCurrentLocation];
+/*****can be also done using one of the following methods *****/
+//[manager addGeofenceAtCurrentLocationWithRadious:100];
+//[manager addGeofenceAtlatitude:59.331981f andLongitude:18.068435f withRadious:100 withIdentifier:@&amp;quot;MyFence-1&amp;quot;;
+//[manager addGeofenceAtCurrentLocationWithRadious:100 withIdentifier:@&amp;quot;MyFence-1&amp;quot;];
+//[manager addGeofenceAtCoordinates:CLLocationCoordinate2DMake(59.331981f, 18.068435f) withRadious:100 withIdentifier:@&amp;quot;MyFence-1&amp;quot;];
+//[manager addGeofenceAtCoordinates:CLLocationCoordinate2DMake(59.331981f, 18.068435f) withRadious:100 withIdentifier:nil];//If you provide identifier name &#39;nil&#39;, BBLocationManager will automatically asign a identifier string
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;get-all-added-geofences&#34;&gt;Get all added geofences&lt;/h4&gt;
+
+&lt;p&gt;See which geofence is already added to get enter/exit callbacks. &lt;strong&gt;NOTE:&lt;/strong&gt; You can add [maximum 20 geofences, its a limit &lt;a href=&#34;https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/LocationAwarenessPG/RegionMonitoring/RegionMonitoring.html&#34;&gt;apple put&lt;/a&gt; in region monitoring.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-objective-c&#34;&gt; BBLocationManager *manager = [BBLocationManager sharedManager];
+    
+    NSArray *geoFences = [manager getCurrentFences];
+    NSString *allFencetxt = @&amp;quot;All fences: &amp;quot;;
+    for (BBFenceInfo *geofence in geoFences)
+    {
+        NSString *txt = [NSString stringWithFormat:@&amp;quot;Geofence &#39;%@&#39; is Active at Coordinates: %@:%@ with %@ meter radious \n&amp;quot;, geofence.fenceIDentifier, [geofence.fenceCoordinate objectForKey:BB_LATITUDE],[geofence.fenceCoordinate objectForKey:BB_LONGITUDE], [geofence.fenceCoordinate objectForKey:BB_RADIOUS]];
+        NSLog(@&amp;quot;%@&amp;quot;, txt);
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;delete-a-spefific-geofence&#34;&gt;Delete a spefific geofence&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-objectivec&#34;&gt; BBLocationManager *manager = [BBLocationManager sharedManager];
+[manager deleteGeoFenceWithIdentifier:@&amp;quot;My-Geofence-3&amp;quot;];
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;subscribe-to-continious-location&#34;&gt;Subscribe to Continious location&lt;/h4&gt;
+
+&lt;p&gt;To get continuous location updates, use &lt;code&gt;-getContiniousLocationWithDelegate:&lt;/code&gt; method. This will enable the BBLocationManager to listen every bit of change in location, and will keep you updated using the &lt;code&gt;-BBLocationManagerDidUpdateLocation:&lt;/code&gt; delegate call. To stop getting continious location, call &lt;code&gt;-stopGettingLocation&lt;/code&gt; method. Note that, until you stop the continious location, it will keep updating and will use battery life.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-objectivec&#34;&gt;BBLocationManager *manager = [BBLocationManager sharedManager];
+[manager getContiniousLocationWithDelegate:self];
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;subscribe-to-significant-location-change&#34;&gt;Subscribe to Significant location change&lt;/h4&gt;
+
+&lt;p&gt;To get significant location changes, use &lt;code&gt;-getSingificantLocationChangeWithDelegate:&lt;/code&gt; method. This will start looking for for significant location changes, which is very power efficient. The delegate callback &lt;code&gt;-BBLocationManagerDidUpdateLocation:&lt;/code&gt; will be called everytime BBLocationManager finds any significant location change. This can be stoped by calling the &lt;code&gt;-stopGettingLocation&lt;/code&gt; method.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-objectivec&#34;&gt;BBLocationManager *manager = [BBLocationManager sharedManager];
+[manager getSingificantLocationChangeWithDelegate:self];
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; Significant location change will not be called frequently. According to &lt;a href=&#34;https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/LocationAwarenessPG/CoreLocation/CoreLocation.html&#34;&gt;Apple documentation:&lt;/a&gt;
+&amp;gt;&amp;ldquo;Apps can expect a notification as soon as the device moves 500 meters or more from its previous notification. It should not expect notifications more frequently than once every five minutes. If the device is able to retrieve data from the network, the location manager is much more likely to deliver notifications in a timely manner.&amp;rdquo;&lt;/p&gt;
+
+&lt;h4 id=&#34;stop-getting-all-kind-of-location&#34;&gt;Stop getting all kind of location&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-objectivec&#34;&gt;BBLocationManager *manager = [BBLocationManager sharedManager];
+[manager stopGettingLocation];
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;bblocationmanagerdelegate-methods&#34;&gt;BBLocationManagerDelegate methods&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-objectivec&#34;&gt;-(void)BBLocationManagerDidUpdateLocation:(NSDictionary *)latLongAltitudeDictionary;
+
+-(void)BBLocationManagerDidUpdateGeocodeAdress:(NSDictionary *)addressDictionary;
+
+-(void)BBLocationManagerDidAddFence:(BBFenceInfo *)fenceInfo;
+-(void)BBLocationManagerDidFailedFence:(BBFenceInfo *)fenceInf
+-(void)BBLocationManagerDidEnterFence:(BBFenceInfo *)fenceInfo
+-(void)BBLocationManagerDidExitFence:(BBFenceInfo *)fenceInfo;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;example-project&#34;&gt;Example Project&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/benzamin/BBLocationManager/archive/master.zip&#34;&gt;Downloading the full source code&lt;/a&gt; or checking out using git will provide you the example project. Give it a try, dont forget to specify a location in the iOS Simulator&amp;rsquo;s Debug &amp;gt; Location menu if you aren&amp;rsquo;t testing on real device.&lt;/p&gt;
+
+&lt;h2 id=&#34;give-a-star&#34;&gt;Give a star&lt;/h2&gt;
+
+&lt;p&gt;if you like &lt;a href=&#34;http://github.com/benzamin/BBLocationManager&#34;&gt;BBLocationManager repo&lt;/a&gt;, please dont forget to give a STAR.
+ &lt;br&gt;&lt;br&gt;
+&lt;iframe src=&#34;https://ghbtns.com/github-btn.html?user=benzamin&amp;repo=BBLocationManager&amp;type=star&amp;count=true&amp;size=large&#34; frameborder=&#34;0&#34; scrolling=&#34;0&#34; width=&#34;160px&#34; height=&#34;30px&#34;&gt;&lt;/iframe&gt;
+&lt;iframe src=&#34;https://ghbtns.com/github-btn.html?user=benzamin&amp;repo=BBLocationManager&amp;type=watch&amp;count=true&amp;size=large&amp;v=2&#34; frameborder=&#34;0&#34; scrolling=&#34;0&#34; width=&#34;160px&#34; height=&#34;30px&#34;&gt;&lt;/iframe&gt;
+&lt;iframe src=&#34;https://ghbtns.com/github-btn.html?user=benzamin&amp;repo=BBLocationManager&amp;type=fork&amp;count=true&amp;size=large&#34; frameborder=&#34;0&#34; scrolling=&#34;0&#34; width=&#34;158px&#34; height=&#34;30px&#34;&gt;&lt;/iframe&gt;
+&lt;iframe src=&#34;https://ghbtns.com/github-btn.html?user=benzamin&amp;type=follow&amp;count=true&amp;size=large&#34; frameborder=&#34;0&#34; scrolling=&#34;0&#34; width=&#34;220px&#34; height=&#34;30px&#34;&gt;&lt;/iframe&gt;
+&lt;br&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;using-bblocationmanager-in-your-project&#34;&gt;Using BBLocationManager in your project?&lt;/h3&gt;
+
+&lt;p&gt;If you are using this library in your project, and happy about it, please send me a &lt;a href=&#34;mailto:benzamin1985@gmail.com&#34;&gt;email&lt;/a&gt; and let me know, I&amp;rsquo;ll add a references of your app. Thanks :)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Synchronus Code Execution in iOS</title>
+      <link>http://redgreen.studio/blog/2016/12/26/synchronus-code-ios/</link>
+      <pubDate>Mon, 26 Dec 2016 16:49:03 +0600</pubDate>
+      
+      <guid>http://redgreen.studio/blog/2016/12/26/synchronus-code-ios/</guid>
+      <description>
+
+&lt;p&gt;&amp;ldquo;Asynchronus programming&amp;rdquo; is a polular term now-a-days. People are talking all over the internet about it. Specially when we have network/API calls, we should keep free the main thread, and do the network calling stuff in the background. Cause if we block the main thread, it won&amp;rsquo;t be able to respond to user interaction such as touch. Async calls can be executed on new/seperate threads synchronously, or can be scheduled in the main/other thread&amp;rsquo;s runloop. For an example, if you want to polulate a tableview/collectionView with some data from server, you need to show a loader, call the API asynchronously, when it finished after some time, show the data and refresh the table/collection view.
+&lt;br&gt;&lt;br&gt;(Jump: Browse to the &lt;a href=&#34;https://gist.github.com/benzamin/d64cc7f7487a518556dc7e65dc3d24e0&#34;&gt;sample code&lt;/a&gt; on Github)&lt;/p&gt;
+
+&lt;h3 id=&#34;let-there-be-sync&#34;&gt;Let there be Sync!&lt;/h3&gt;
+
+&lt;p&gt;But you sometimes need to execute a code block in a &amp;ldquo;Synchronous&amp;rdquo; way. That means you want to wait until a line of code or a bunch of code is finished, then let execute the next line. Just like one by one execution, the action will execute in synchronous within the runloop of your app.&lt;/p&gt;
+
+&lt;h3 id=&#34;why-when-we-need-this&#34;&gt;Why &amp;amp; when we need this?&lt;/h3&gt;
+
+&lt;p&gt;Well, if you want to execute some operations, which depends on each other, you need to run them synchronously. Suppose you have 2 service/API calls, once all of them are finished, you will combine them to show in the view. In this case, you need to know when all of them are loaded, as they might take variable time to load. So you need to keep track when all of them are finished. What we can do? Use a counter may be? Which will be decremented by one after every task is finished, and check when the counter hits zero, then execute the final rendering in the view. But its aot a good idea, using a counter, there are good things already in the iOS sdk to do this.&lt;/p&gt;
+
+&lt;h3 id=&#34;ways-of-synchronous-code-execution&#34;&gt;Ways of synchronous code execution&lt;/h3&gt;
+
+&lt;p&gt;There are several options, like GCD dispatch sync.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-objectivec&#34;&gt;dispatch_sync(my_custom_bacground_queue, ^{ /* do your stuff */ });
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you want to wait in a line/bunch of code from main queue/thread, and then execute the next line when the previous line/bunch of code is done executing in the background thread, you can use semaphores&amp;hellip;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-objectivec&#34;&gt;-(id)syncRequest:(id)params
+{
+	__block NSData *responseData = nil;   
+		dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
+        //following API call is inititated from main queue
+		[SomeNetworkClass callAPIWithParams:params completionHandler:^(NSData *response, NSError *error) 
+		{
+        //response callback block is called from background thread
+			responseData = [NSData dataWithData:response];
+			dispatch_semaphore_signal(semaphore);
+		}];
+	dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER); 
+	return responseData;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; If the callback block of the API call is delivered in main thread instead of background thread, you&amp;rsquo;r app will be stuck in the &amp;ldquo;dispatch_semaphore_wait&amp;rdquo; line, cause the main thread will never execute the callback as it is paused and waiting for &amp;ldquo;dispatch_semaphore_signal&amp;rdquo; to resume. If you end up in this deadlock situation, make sure that the response callback is executed in the background thread. i.e: For &lt;strong&gt;AFNetworking&lt;/strong&gt;, by default all the success/failure callbacks are delivered in the main queue, you have to set the &amp;ldquo;completionQueue&amp;rdquo; property of the AFHTTPSessionManager or AFURLSessionManager to a custom queue.&lt;/p&gt;
+
+&lt;p&gt;I personally like dispatch groups. Here is a &lt;a href=&#34;https://gist.github.com/benzamin/d64cc7f7487a518556dc7e65dc3d24e0&#34;&gt;sample code&lt;/a&gt; for a class which I use for using dispatch groups. I usually use this class as a singletone so that I can use this from anywhere of my code anytime I want.&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/benzamin/d64cc7f7487a518556dc7e65dc3d24e0.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;You can just copy the class (DispatchGroup.h + DispatchGroup.m) in your project, and use them as shown in the sample MySampleViewController.m, hasle free.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dont forget to explore and star my &lt;a href=&#34;https://github.com/benzamin/&#34;&gt;github&lt;/a&gt; repos, comment if you have something in your mind 😊&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
