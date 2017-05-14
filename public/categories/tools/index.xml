@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tools on RedGreen Studio</title>
-    <link>http://redgreen.studio/categories/tools/index.xml</link>
+    <link>http://redgreen.studio/categories/tools/</link>
     <description>Recent content in Tools on RedGreen Studio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2017, RedGreen Studio; all rights reserved.</copyright>
-    <atom:link href="http://redgreen.studio/categories/tools/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 12 Nov 2016 21:47:08 +0200</lastBuildDate>
+    
+	<atom:link href="http://redgreen.studio/categories/tools/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>ShellMamu, Shell Utility Tool</title>
@@ -15,63 +18,9 @@
       <pubDate>Sat, 12 Nov 2016 21:47:08 +0200</pubDate>
       
       <guid>http://redgreen.studio/blog/2016/11/12/shell-mamu/</guid>
-      <description>
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/benzamin/shellmamu/&#34;&gt;ShellMamu&lt;/a&gt; is a small utility/helper tool for &lt;a href=&#34;https://en.wikipedia.org/wiki/Shell_script/&#34;&gt;shell&lt;/a&gt; scripting language.
-It offers some utility commands which I used frequently in my work. The main purpose of shellMamu is to easily provide the needed parameters for a command.&lt;/p&gt;
-
-&lt;p&gt;This document is a brief primer on using &lt;a href=&#34;https://github.com/benzamin/shellmamu/&#34;&gt;shellMamu&lt;/a&gt;. Please visit the &lt;a href=&#34;https://github.com/benzamin/shellmamu/&#34;&gt;github&lt;/a&gt;
-page for more details.&lt;/p&gt;
-
-&lt;iframe src=&#34;https://ghbtns.com/github-btn.html?user=benzamin&amp;repo=shellmamu&amp;type=star&amp;count=true&amp;size=large&#34; frameborder=&#34;0&#34; scrolling=&#34;0&#34; width=&#34;160px&#34; height=&#34;30px&#34;&gt;&lt;/iframe&gt;
-&lt;iframe src=&#34;https://ghbtns.com/github-btn.html?user=benzamin&amp;repo=shellmamu&amp;type=watch&amp;count=true&amp;size=large&amp;v=2&#34; frameborder=&#34;0&#34; scrolling=&#34;0&#34; width=&#34;160px&#34; height=&#34;30px&#34;&gt;&lt;/iframe&gt;
-&lt;iframe src=&#34;https://ghbtns.com/github-btn.html?user=benzamin&amp;repo=shellmamu&amp;type=fork&amp;count=true&amp;size=large&#34; frameborder=&#34;0&#34; scrolling=&#34;0&#34; width=&#34;158px&#34; height=&#34;30px&#34;&gt;&lt;/iframe&gt;
-&lt;iframe src=&#34;https://ghbtns.com/github-btn.html?user=benzamin&amp;type=follow&amp;count=true&amp;size=large&#34; frameborder=&#34;0&#34; scrolling=&#34;0&#34; width=&#34;220px&#34; height=&#34;30px&#34;&gt;&lt;/iframe&gt;
-
-&lt;h3 id=&#34;background&#34;&gt;Background&lt;/h3&gt;
-
-&lt;p&gt;I&amp;rsquo;ve been using small shell/unix commands for various purpose in Mac&amp;rsquo;s &lt;a href=&#34;http://www.macworld.co.uk/feature/mac-software/get-more-out-of-os-x-terminal-3608274/&#34;&gt;terminal&lt;/a&gt; for years. Some time ago I was working on some shell scripts for build automation using Jenkins a year back. I found that for a begginer or intermediate experienced developer, its hard to remember all the needed parameters and its order. Sometimes it kills a lot of time, sometime a wrong command can ruin your entire hours work.&lt;/p&gt;
-
-&lt;p&gt;So I decided to write a small utility tool (for myself!) so that the common commands I use can be used more easily. Just you have to type the command in the shellMamu tool and hit enter, and the mamu will ask you politely for all the needed parameters/inputs needed to execute that command. How cool is that? 😎&lt;/p&gt;
-
-&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
-
-&lt;p&gt;Download or clone &lt;a href=&#34;https://github.com/benzamin/shellmamu/&#34;&gt;shellMamu&lt;/a&gt; repo, open terminal and go to the downloaded/cloned folder using cd command, then run&amp;hellip;
-&lt;pre&gt;&lt;code class=&#34;shell&#34;&gt;$ sudo sh install
-&lt;/code&gt;&lt;/pre&gt;
-Note that, mamu needs your admin access/password to get copied in the system folder.&lt;/p&gt;
-
-&lt;h3 id=&#34;basic-usage&#34;&gt;Basic Usage&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;ShellMamu has this available commands:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ mamu help (Prints help for all available commands)
-$ mamu countdown (counts down with voice feedback a certain amount of seconds)
-$ mamu findnreplace (finds given text and replaces it with a new one in a file)
-$ mamu findtext (finds given text in a file or folder and shows a list of them)
-$ mamu symboliclink (make a symbolic link of a file/folder into another folder)
-$ mamu httpserver (starts basic python HTTP server in a given port &amp;amp; directory)
-$ mamu killnode (kills all running node.js instances or a given one)
-$ mamu testtls (tests which TLS versions supported on a given website)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Just write any command, and mamu will ask you for needed parameters, like-
-&lt;pre&gt;&lt;code class=&#34;shell&#34;&gt;$ mamu countdown
-&lt;/code&gt;&lt;/pre&gt;
-And it&amp;rsquo;ll ask for how many seconds it will countdown&amp;hellip;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;::TIPS:: You can also use countdown command like - $ mamu countdown 10  
- How many seconds you want to countdown? -&amp;gt;  4
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And then it starts counting down with voice feedback. You can see all the available commands and help by just typing &amp;ldquo;mamu&amp;rdquo; in the terminal.&lt;/p&gt;
-
-&lt;p&gt;&lt;iframe src=&#34;https://ghbtns.com/github-btn.html?user=benzamin&amp;repo=shellmamu&amp;type=star&amp;count=true&amp;size=large&#34; frameborder=&#34;0&#34; scrolling=&#34;0&#34; width=&#34;160px&#34; height=&#34;30px&#34;&gt;&lt;/iframe&gt;
-&lt;iframe src=&#34;https://ghbtns.com/github-btn.html?user=benzamin&amp;repo=shellmamu&amp;type=watch&amp;count=true&amp;size=large&amp;v=2&#34; frameborder=&#34;0&#34; scrolling=&#34;0&#34; width=&#34;160px&#34; height=&#34;30px&#34;&gt;&lt;/iframe&gt;
-&lt;iframe src=&#34;https://ghbtns.com/github-btn.html?user=benzamin&amp;repo=shellmamu&amp;type=fork&amp;count=true&amp;size=large&#34; frameborder=&#34;0&#34; scrolling=&#34;0&#34; width=&#34;158px&#34; height=&#34;30px&#34;&gt;&lt;/iframe&gt;
-&lt;iframe src=&#34;https://ghbtns.com/github-btn.html?user=benzamin&amp;type=follow&amp;count=true&amp;size=large&#34; frameborder=&#34;0&#34; scrolling=&#34;0&#34; width=&#34;220px&#34; height=&#34;30px&#34;&gt;&lt;/iframe&gt;&lt;br&gt;
-&lt;strong&gt;Don&amp;rsquo;t forget to star the repo if you like it 😊&lt;/strong&gt;&lt;/p&gt;
-</description>
+      <description>ShellMamu is a small utility/helper tool for shell scripting language. It offers some utility commands which I used frequently in my work. The main purpose of shellMamu is to easily provide the needed parameters for a command.
+This document is a brief primer on using shellMamu. Please visit the github page for more details.
+    Background I&amp;rsquo;ve been using small shell/unix commands for various purpose in Mac&amp;rsquo;s terminal for years.</description>
     </item>
     
   </channel>
