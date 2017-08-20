@@ -7,7 +7,7 @@
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Tools</title>
+  <title>Simple file caching &amp; manipulation in iOS</title>
 
   <meta name="author" content="" />
   <meta name="keywords" content="">
@@ -49,9 +49,9 @@
   <link rel="alternate" href="http://redgreen.studio/index.xml" type="application/rss+xml" title="RedGreen Studio">
 
   
-  <meta property="og:title" content="Tools" />
+  <meta property="og:title" content="Simple file caching &amp; manipulation in iOS" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="/categories/tools//" />
+  <meta property="og:url" content="/blog/2017/08/20/simple-file-cache-ios//" />
   <meta property="og:image" content="img/logo.png" />
 
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css"> 
@@ -73,9 +73,9 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand home" href="http://redgreen.studio/">
-                    <img src="http://redgreen.studio/img/logo.png" alt="Tools logo" class="hidden-xs hidden-sm">
-                    <img src="http://redgreen.studio/img/logo-small.png" alt="Tools logo" class="visible-xs visible-sm">
-                    <span class="sr-only">Tools - go to homepage</span>
+                    <img src="http://redgreen.studio/img/logo.png" alt="Simple file caching &amp; manipulation in iOS logo" class="hidden-xs hidden-sm">
+                    <img src="http://redgreen.studio/img/logo-small.png" alt="Simple file caching &amp; manipulation in iOS logo" class="visible-xs visible-sm">
+                    <span class="sr-only">Simple file caching &amp; manipulation in iOS - go to homepage</span>
                 </a>
                 <div class="navbar-buttons">
                     <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
@@ -140,7 +140,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Tools</h1>
+                <h1>Simple file caching &amp; manipulation in iOS</h1>
             </div>
         </div>
     </div>
@@ -149,59 +149,73 @@
 
         <div id="content">
             <div class="container">
+
                 <div class="row">
+
                     
 
-                    <div class="col-md-9" id="blog-listing-medium">
+                    <div class="col-md-9" id="blog-post">
 
+                        <p class="text-muted text-uppercase mb-small text-right">August 20, 2017</p>
+
+                        <div id="post-content">
+                          
+
+<blockquote>
+<p>This document is heavily influenced by <a href="https://developer.apple.com/library/content/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/AccessingFilesandDirectories/AccessingFilesandDirectories.html">Apple docs</a></p>
+</blockquote>
+
+<p>(Jump: Browse to the <a href="https://gist.github.com/benzamin/206344e1b8a097c560cbc5eb400df63d">sample code</a> on Github)<br>
+For security purposes, an iOS app’s interactions with the file system are limited to the directories inside the app’s sandbox directory. During installation of a new app, the installer creates a number of container directories for the app inside the sandbox directory. Each container directory has a specific role. The bundle container directory holds the app’s bundle, whereas the data container directory holds data for both the app and the user. The data container directory is further divided into a number of subdirectories that the app can use to sort and organize its data. The app may also request access to additional container directories—for example, the iCloud container—at runtime.</p>
+
+<p><img src="https://developer.apple.com/library/content/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/art/ios_app_layout_2x.png" alt="iOS App Sandbox - Courtesy of Apple" style="width: 400px;"/></p>
+
+<p>An app is generally prohibited from accessing or creating files outside its container directories. One exception to this rule is when an app uses public system interfaces to access things such as the user’s contacts or music. In those cases, the system frameworks use helper apps to handle any file-related operations needed to read from or modify the appropriate data stores.</p>
+
+<h3 id="accessing-files-and-directories">Accessing Files and Directories</h3>
+
+<p>Before you can open a file, you first have to locate it in the file system. The system frameworks provide many routines for obtaining references to many well-known directories, such as the Library directory and its contents. You can also specify locations manually by building a URL or string-based path from known directory names.</p>
+
+<p>When you know the location of a file, you can then start planning the best way to access it. Depending on the type of file, you may have several options. For known file types, you typically use built-in system routines to read or write the file contents and give you an object that you can use. For custom file types, you may need to read the raw file data yourself.</p>
+
+<h3 id="bbfilemanager-class">BBFileManager Class</h3>
+
+<p>This small utility class let you do some basic things&hellip;</p>
+
+<ul>
+<li>File caching with <strong>expiration date</strong> for Objects which implements NSCoding protocol.</li>
+<li>File manipulation of image files, NSArray and NSDictionary.</li>
+<li>Get file exists or not from documents directory, save and delete them.</li>
+<li>All the methods are class methods, so no need to instantiate.</li>
+</ul>
+
+<p>Here is the class:
+ <script src="https://gist.github.com/benzamin/206344e1b8a097c560cbc5eb400df63d.js"></script></p>
+
+<p><strong>Dont forget to explore and star my <a href="https://github.com/benzamin/">github</a> repos, comment if you have something in your mind 😊</strong></p>
+
+                        </div>
                         
                         
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="http://redgreen.studio/blog/2016/11/12/shell-mamu/">
-                                          
-                                          <img src="http://redgreen.studio/img/blog/shell-mamu.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="http://redgreen.studio/blog/2016/11/12/shell-mamu/">ShellMamu, Shell Utility Tool</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="http://redgreen.studio/categories/tools">Tools</a>
-                                          
-                                          
+                        <div id="comments">
+                            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'redgreen';
+    var disqus_identifier = 'http:\/\/redgreen.studio\/blog\/2017\/08\/20\/simple-file-cache-ios\/';
+    var disqus_title = 'Simple file caching \x26 manipulation in iOS';
+    var disqus_url = 'http:\/\/redgreen.studio\/blog\/2017\/08\/20\/simple-file-cache-ios\/';
 
-                                        </p>
-                                        <p class="date-comments">
-                                            <a href="http://redgreen.studio/blog/2016/11/12/shell-mamu/"><i class="fa fa-calendar-o"></i> November 12, 2016</a>
-                                        </p>
-                                    </div>
-                                    <p class="intro">ShellMamu is a small utility/helper tool for shell scripting language. It offers some utility commands which I used frequently in my work. The main purpose of shellMamu is to easily provide the needed parameters for a command.
-This document is a brief primer on using shellMamu. Please visit the github page for more details.
-    Background I&rsquo;ve been using small shell/unix commands for various purpose in Mac&rsquo;s terminal for years.</p>
-                                    <p class="read-more"><a href="http://redgreen.studio/blog/2016/11/12/shell-mamu/" class="btn btn-template-main">Continue reading</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                        </div>
                         
 
-                        <ul class="pager">
-                            
-                            <li class="previous disabled"><a href="#">&larr; Newer</a></li>
-                            
-
-                            
-                            <li class="next disabled"><a href="#">Older &rarr;</a></li>
-                            
-                        </ul>
                     </div>
                     
 
@@ -313,6 +327,7 @@ This document is a brief primer on using shellMamu. Please visit the github page
 
                 </div>
                 
+
             </div>
             
         </div>

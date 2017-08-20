@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2017, RedGreen Studio; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 14 May 2017 14:46:40 +0600</lastBuildDate>
+    <lastBuildDate>Sun, 20 Aug 2017 12:38:01 +0600</lastBuildDate>
     
 	<atom:link href="http://redgreen.studio/tags/ios/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Simple file caching &amp; manipulation in iOS</title>
+      <link>http://redgreen.studio/blog/2017/08/20/simple-file-cache-ios/</link>
+      <pubDate>Sun, 20 Aug 2017 12:38:01 +0600</pubDate>
+      
+      <guid>http://redgreen.studio/blog/2017/08/20/simple-file-cache-ios/</guid>
+      <description>This document is heavily influenced by Apple docs
+ (Jump: Browse to the sample code on Github)
+For security purposes, an iOS app’s interactions with the file system are limited to the directories inside the app’s sandbox directory. During installation of a new app, the installer creates a number of container directories for the app inside the sandbox directory. Each container directory has a specific role. The bundle container directory holds the app’s bundle, whereas the data container directory holds data for both the app and the user.</description>
+    </item>
     
     <item>
       <title>Automatic view push for UITextField in iOS</title>

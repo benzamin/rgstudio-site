@@ -1,6 +1,9 @@
 # Should skip the public folder, but for now....lets keep it
 # public
 
+#Theme folder no need to track
+themes/hugo-universal-theme
+
 # And this junk of Mac-OSX
 *.DS_Store
 
